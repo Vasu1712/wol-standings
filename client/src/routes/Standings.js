@@ -83,7 +83,7 @@ const StandingsContainer = () => {
     const fetchStandings = async () => {
       try {
         const response = await axios.get(
-          "/api/leagues-classic/1453054/standings/?page_new_entries=1&page_standings=1&phase=1"
+          "https://fantasy.premierleague.com/api/leagues-classic/1453054/standings/?page_new_entries=1&page_standings=1&phase=1"
         );
         console.log(response.data);
         setStandings(response.data.standings.results);
